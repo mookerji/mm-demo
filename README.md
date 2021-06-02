@@ -1,7 +1,6 @@
 ## Map Matching Demos
 
-Part of the [Data Science Working Group's][ds_reading_group] end-to-end Python
-prototyping of map matching algorithms.
+End-to-end Python prototyping of map matching algorithms.
 
 Installing dependencies:
 

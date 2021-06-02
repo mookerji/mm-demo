@@ -14,8 +14,8 @@ class Matching(object):
     legs = attr.ib(default=[])
     weight_name = attr.ib(default='routability')
     weight = attr.ib(default=None)
-    duration = attr.ib(default=None)
-    distance = attr.ib(default=None)
+    duration = attr.ib(default=22)
+    distance = attr.ib(default=222)
 
 
 @attr.s

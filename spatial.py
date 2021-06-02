@@ -189,7 +189,8 @@ class SpatialEdgeIndex(object):
         graph['points'] \
           = graph.apply(lambda x: osm.redistribute_vertices(x.geometry, dist), axis=1)
         #import pdb; pdb.set_trace()
-        extended = graph['points'].apply([pd.Series]).stack().reset_index(level=1, drop=True).join(graph).reset_index()
+        extended = graph['points'].apply([pd.Series]).stack().reset_index(
+            level=1, drop=True).join(graph).reset_index()
         nodes = pd.DataFrame({
             'x': extended['Series'].apply(lambda x: x.x),
             'y': extended['Series'].apply(lambda x: x.y)
